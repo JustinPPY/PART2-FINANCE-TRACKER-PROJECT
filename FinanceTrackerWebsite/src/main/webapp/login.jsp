@@ -24,7 +24,7 @@ crossorigin="anonymous">
 			<form action="LoginRegisterServlet" method="post">
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3">
-                            Email:<input type="text" name="email" required>
+                            Email:<input type="email" name="email" required>
                         </div>
                     </div>
                     <div class="row">

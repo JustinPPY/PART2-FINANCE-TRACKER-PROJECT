@@ -52,12 +52,15 @@ public class LoginRegisterServlet extends HttpServlet {
 			case "/LoginRegisterServlet/logout":
 				Logout(request, response);
 				break;
-
+				
+			default:
+		        response.getWriter().print("Wrong URL");
+				break;
 			}
+			
 		} catch (SQLException ex) {
 			throw new ServletException(ex);
 		}
-		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
@@ -101,7 +104,8 @@ public class LoginRegisterServlet extends HttpServlet {
 						response.addCookie(ck);// adding cookie in the response
 
 						response.sendRedirect(
-								"http://localhost:8080/FinanceTrackerWebsite/ReturnFinanceServlet/dashboard");
+								request.getContextPath()+
+								"/ReturnFinanceServlet/dashboard");
 
 					}
 
@@ -134,7 +138,7 @@ public class LoginRegisterServlet extends HttpServlet {
 			String surname = request.getParameter("surname");
 			float income = Float.parseFloat(request.getParameter("income"));
 
-			// Step 3: attempt connection to database using JDBC, you can change the
+			// Step 3: attempt  connection to database using JDBC, you can change the
 			// username and password accordingly using the phpMyAdmin > User Account
 			// dashboard
 
@@ -187,14 +191,14 @@ public class LoginRegisterServlet extends HttpServlet {
 
 	}
 
-	private void Logout(HttpServletRequest request, HttpServletResponse response)
+	protected void Logout(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, ServletException, IOException {
 		Cookie ck = new Cookie("USERID", "REMOVE");// creating cookie object
 		ck.setMaxAge(0);
 		ck.setPath("/FinanceTrackerWebsite");
 		response.addCookie(ck);// adding cookie in the response
 		// TODO Auto-generated method stub
-		response.sendRedirect("http://localhost:8080/FinanceTrackerWebsite/login.jsp");
+		response.sendRedirect(request.getContextPath()+"/FinanceTrackerWebsite/login.jsp");
 	}
 
 }
