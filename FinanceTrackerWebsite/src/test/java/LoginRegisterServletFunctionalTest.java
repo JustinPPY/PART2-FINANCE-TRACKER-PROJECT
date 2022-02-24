@@ -20,7 +20,7 @@ import org.testng.annotations.AfterTest;
 public class LoginRegisterServletFunctionalTest {
 	// declare Selenium WebDriver
 	private WebDriver webDriver;
-	String domain = "http://localhost:8080/FinanceTrackerWebsite";
+	String domain = "http://localhost:8090/FinanceTrackerWebsite";
 	
 	String emailLog= "FTestLog@gmail.com";
 	String passwordLog= "password";
