@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-25T00:10:06 SGT" name="Default suite" finished-at="2022-02-25T00:10:12 SGT" duration-ms="5175">
+    <groups>
+    </groups>
+    <test started-at="2022-02-25T00:10:06 SGT" name="Default test" finished-at="2022-02-25T00:10:12 SGT" duration-ms="5175">
+      <class name="LoginRegisterServletFunctionalTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:LoginRegisterServletFunctionalTest@6bd61f98]" started-at="2022-02-25T00:10:06 SGT" name="beforeTest" finished-at="2022-02-25T00:10:09 SGT" duration-ms="2713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="LoginUser()[pri:0, instance:LoginRegisterServletFunctionalTest@6bd61f98]" started-at="2022-02-25T00:10:09 SGT" name="LoginUser" finished-at="2022-02-25T00:10:11 SGT" duration-ms="1425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginUser -->
+        <test-method signature="Logout()[pri:0, instance:LoginRegisterServletFunctionalTest@6bd61f98]" started-at="2022-02-25T00:10:11 SGT" name="Logout" finished-at="2022-02-25T00:10:11 SGT" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method signature="RegisterUser()[pri:0, instance:LoginRegisterServletFunctionalTest@6bd61f98]" started-at="2022-02-25T00:10:11 SGT" name="RegisterUser" finished-at="2022-02-25T00:10:11 SGT" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUser -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:LoginRegisterServletFunctionalTest@6bd61f98]" started-at="2022-02-25T00:10:11 SGT" name="afterTest" finished-at="2022-02-25T00:10:12 SGT" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- LoginRegisterServletFunctionalTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

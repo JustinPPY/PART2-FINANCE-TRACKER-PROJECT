@@ -225,7 +225,7 @@ class LoginRegisterServletTest {
 	     TestClass.doGet(request, response);
 	     
 	     verify(response).sendRedirect(captor.capture());
-	     assertEquals(request.getContextPath()+"/FinanceTrackerWebsite/login.jsp", captor.getValue());
+	     assertEquals(request.getContextPath()+"/login.jsp", captor.getValue());
 	     
 	}
 

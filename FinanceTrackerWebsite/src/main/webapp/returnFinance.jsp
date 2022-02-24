@@ -17,7 +17,7 @@
 	crossorigin="anonymous">
 
 
-<title>Insert title here</title>
+<title>Finance</title>
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
@@ -31,26 +31,24 @@
 				<div class="navbar-nav ml-auto">
 					<div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
 						<div class="btn-group">
-							<a class="nav-link dropdown-toggle"
+							<a class="nav-link dropdown-toggle" name="profile"
 								href="javascript:void(0)" role="button" data-toggle="dropdown">
 								<b style="padding-left: 5px">${name} ${surname}</b>
 
 							</a>
 
 							<ul class="dropdown-menu dropdown-menu-right">
-								<li><a class="dropdown-item" href="../ProfileServlet/edit?iduser=<c:out value='${listFinance.iduser}'/>">Profile</a>
+								<li><a class="dropdown-item"
+									href="../ProfileServlet/edit?iduser=<c:out value='${listFinance.iduser}'/>">Profile</a>
 
 								</li>
 								<li><div class="dropdown-divider"></div></li>
 								<li>
-								<form>
-								<a class="dropdown-item" href="../LoginRegisterServlet/logout"
-									>Logout
-									
-									</a>
-								
-								</form>
-								
+									<form>
+										<a name="logout" class="dropdown-item" href="../LoginRegisterServlet/logout">Logout </a>
+
+									</form>
+
 								</li>
 
 							</ul>

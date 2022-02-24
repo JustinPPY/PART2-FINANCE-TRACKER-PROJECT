@@ -198,7 +198,7 @@ public class LoginRegisterServlet extends HttpServlet {
 		ck.setPath("/FinanceTrackerWebsite");
 		response.addCookie(ck);// adding cookie in the response
 		// TODO Auto-generated method stub
-		response.sendRedirect(request.getContextPath()+"/FinanceTrackerWebsite/login.jsp");
+		response.sendRedirect(request.getContextPath()+"/login.jsp");
 	}
 
 }
